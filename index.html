@@ -1,0 +1,44 @@
+<!--Author: Venkata Satya Ravi Kiran Boggavarapu
+    Student ID: 1001541261
+    All work in this document is my original work. 
+    As far as my knowledge, I did not copied any of the content that is present in this file -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.2.1.min.js"></script>
+        <!-- jQuery can be fetched using the CDN or can be included by downloading the above file. 
+        The cdn can be attached as.. "<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>" -->
+        <script type="text/javascript" src="main.js"></script>
+        <!-- main.js contains the script that fetched the information from the national weather service -->
+    </head>
+    <body>
+        <table>
+            <!-- input boxes are kept in a table. -->
+            <tr>
+                <td>
+                     Longitude:
+                </td>
+                <td>
+                    <input type="text" id="longitude" value="32.7357">
+                    <!-- get input from user. -->
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    Latitude:
+                </td>
+                <td>
+                    <input type="text" id="latitude" value="-97.1081">
+                </td>
+            </tr> 
+        </table>
+        <button>Submit</button><hr/>
+        <p id="location"></p> <!-- "id" is used by the javascript to display the corresponding output. This tag displays the nearest station. -->
+        <p id="temperature"></p> <!-- This tag displays the current temperature. -->
+        <p id="dewpoint"></p> <!-- This tag displays the dew point. -->
+        <p id="winddirection"></p> <!-- This tag displays the wind direction -->
+        <p id="windspeed"></p> <!-- This tag displays the wind speed. -->
+    </body>
+</html>
+<!--References:
+1) https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
